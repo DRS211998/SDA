@@ -2,12 +2,9 @@ package tema3;
 
 public class Customer {
 
-	String LastName;
-
-	String FirstName;
-
-	int age;
-
+	private String LastName;
+	private String FirstName;
+	private int age;
 	private Adress adress;
 
 	private PaymentMethod paymentMethod;
@@ -18,14 +15,11 @@ public class Customer {
 
 	}
 
-
-
 	public String getFirstName() {
 
 		return FirstName;
 
 	}
-
 
 	public int getAge() {
 
@@ -45,19 +39,12 @@ public class Customer {
 
 	}
 
-
-
-	public Customer(String ln, String fn, int age)
+	public Customer(String LastName, String FirstName, int age)
 
 	{
-
-		LastName=ln;
-
-		FirstName=fn;
-
-		this.age=age;
-
-		
+		this.LastName = LastName;
+		this.FirstName = FirstName;
+		this.age = age;
 
 	}
 
@@ -65,9 +52,9 @@ public class Customer {
 
 	{
 
-		adress=adr;
+		adress = adr;
 
-		paymentMethod=paymentmethod1;
+		paymentMethod = paymentmethod1;
 
 	}
 
@@ -75,14 +62,8 @@ public class Customer {
 
 	{
 
-		return FirstName+LastName+" "+age;
+		return FirstName + LastName + " " + age;
 
 	}
-
-
-
-	
-
-
 
 }

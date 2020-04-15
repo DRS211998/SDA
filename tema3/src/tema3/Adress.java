@@ -1,22 +1,19 @@
 package tema3;
 
 public class Adress {
-	String street;
-
-	String city;
-
-	int number;
-
-	public String getStreet() {
-
-		return street;
-
-	}
-
+	private String street;
+	private String city;
+	private int number;
 
 	public String getCity() {
 
 		return city;
+
+	}
+
+	public String getStreet() {
+
+		return street;
 
 	}
 
@@ -26,22 +23,20 @@ public class Adress {
 
 	}
 
-	public Adress(String City, String Street, int Nr)
+	public Adress(String city, String street, int number)
 
 	{
+		this.city = city;
+		this.street = street;
+		this.number = number;
 
-		city=City;
-
-		street=Street;
-
-		number=Nr;
 	}
 
 	public String getCompleteAdress()
 
 	{
 
-		return city+street+number;
+		return city + street + number;
 
 	}
 }
